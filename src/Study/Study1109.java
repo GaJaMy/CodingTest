@@ -17,7 +17,7 @@ public class Study1109 {
 					stack.pop();
 				} else if (s.charAt(i) == ']' && stack.peek() == '[') {
 					stack.pop();
-				} else if ((s.charAt(i) == '}') && stack.peek() == '{') {
+				} else if (s.charAt(i) == '}' && stack.peek() == '{') {
 					stack.pop();
 				} else {
 					return false;
