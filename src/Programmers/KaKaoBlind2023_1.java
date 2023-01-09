@@ -24,8 +24,6 @@ public class KaKaoBlind2023_1 {
 			LocalDate inputDt = LocalDate.parse(st.nextToken(),formatter);
 			String inputType = st.nextToken();
 
-			LocalDate test1 = inputDt.plusMonths(typeMap.get(inputType).intValue()).minusDays(1);
-			LocalDate test2 = todayDt;
 			if (inputDt.plusMonths(typeMap.get(inputType).intValue()).minusDays(1).isBefore(todayDt)) {
 				list.add(i+1);
 			}
